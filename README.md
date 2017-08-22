@@ -1,6 +1,12 @@
 # hedgehog
 Facebook Messenger bot written in node.js for receipt management. Prototype code that is not live any more.
 
+<p float="left">
+  <img src="/screen1.png" width="32%" />
+  <img src="/screen2.png" width="32%" /> 
+  <img src="/screen3.png" width="32%" />
+</p>
+
 A Facebook Messenger bot was created and associated with a Facebook page. The bot accepted images of store receipts and put it through a processing pipeline (see <a href="https://github.com/curlyfriesonionrings/hedgehog/blob/master/logic.png">logic.png</a> for pipeline).
 
 When HedgeHog received an image, the data is sent to Google Vision's API with an OCR request. The data is received and sent to RestDB.io, where a NoSQL database stores the response from Google Vision's API. Users can then interface with the bot using primitive commands (in the form of "command [argument]") to:
